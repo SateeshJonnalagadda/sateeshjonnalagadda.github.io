@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content=" Personal website showcasing portfolio and contact info">
-  <title>Sateesh Jonnalagadda - Personal Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="snowflake.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sateesh Jonnalagadda | AI-Driven Data Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="about">
-    <div class="container">
-      <h1>About Me</h1>
-      <p>As a Data and Business Intelligence Architect, I am passionate about transforming complex data landscapes into meaningful insights that drive strategic decision-making. With extensive experience in designing and implementing end-to-end BI solutions, I specialize in creating scalable architectures, intuitive dashboards, and efficient data workflows that empower organizations to unlock the full potential of their data.</p>
-    </div>
-    <a href="https://www.linkedin.com/in/s-j-007/" class="link-with-icon" target="_blank">
-    <img src="icons8-linkedin-50.png" alt="Icon">
-  </a>
-    <a href="https://github.com/SateeshJonnalagadda" class="link-with-icon" target="_blank">
-    <img src="icons8-github-50.png" alt="Icon">
-  </a>
-  </a>
-    <a href="https://www.hackerrank.com/profile/jonnalagadda_s" class="link-with-icon" target="_blank">
-    <img src="icons8-hackerrank-50.png" alt="Icon">
-  </a>    
-  </section>
-  <section id="portfolio">
-    <div class="container">
-      <h1>My Portfolio</h1>
-      <p>Here are the things I can contribute:</p>
-      <div class="projects">
-        <div class="project">
-          <img src="datamodel.png" alt="Data modeling">
-          <h3>Datamodeling
-          </h3>
-          <p>Preparing data modeling for efficient Analytics.</p>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">Sateesh</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="project">
-          <img src="reporting.png" alt="Reporting">
-          <h3>Reporting</h3>
-          <p>I can work with any Reporting tool.</p>
-        </div>
-        <div class="project">
-          <img src="gai.png" alt="Generative AI">
-          <h3>Generative AI</h3>
-          <p>Implementing Generative AI in Reporting and Data Analytics.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="contact">
-    <div class="container">
-      <h1>Contact Me</h1>
-      <p>If you'd like to get in touch, feel free to reach out!</p>
-      <form action="mailto:sateesh.jonnalagadda@outlook.com" method="POST" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section id="about" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Sateesh Jonnalagadda.</h1>
+            <h2 class="subtitle">AI-Driven Data Engineer</h2>
+            <p>
+                I build scalable data architectures and leverage artificial intelligence to transform complex information into strategic assets. My expertise spans Python, SQL Server, Docker, and training advanced models on high-performance compute environments like the NVIDIA DGX Spark.
+            </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/s-j-007/" target="_blank"><img src="icons8-linkedin-50.png" alt="LinkedIn"></a>
+                <a href="https://github.com/SateeshJonnalagadda" target="_blank"><img src="icons8-github-50.png" alt="GitHub"></a>
+                <a href="https://www.hackerrank.com/profile/jonnalagadda_s" target="_blank"><img src="icons8-hackerrank-50.png" alt="HackerRank"></a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Sateesh Jonnalagadda. All rights reserved.</p>
-  </footer>
+    <section id="portfolio" class="portfolio">
+        <div class="section-container">
+            <h2>What I Do</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <img src="datamodel.png" alt="Data Modeling" class="card-img">
+                    <h3>Data Engineering & Modeling</h3>
+                    <p>Designing robust ETL pipelines with SSIS and Python, creating highly efficient data models, and managing data flows across distributed systems.</p>
+                </div>
+
+                <div class="card">
+                    <img src="gai.png" alt="Generative AI" class="card-img">
+                    <h3>Applied Generative AI</h3>
+                    <p>Integrating large language models and machine learning pipelines into analytical workflows to automate insights and solve complex business problems.</p>
+                </div>
+
+                <div class="card">
+                    <img src="reporting.png" alt="Scalable Infrastructure" class="card-img">
+                    <h3>Scalable Infrastructure</h3>
+                    <p>Deploying containerized data solutions utilizing Docker and optimizing database performance for secure, high-throughput environments.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="insights" class="insights bg-light">
+        <div class="section-container text-center">
+            <h2>Insights & Analysis</h2>
+            <p>A space where I break down trends at the intersection of AI, economics, stock market dynamics, and global political issues.</p>
+            <a href="#" class="btn btn-outline">Read Articles (Coming Soon)</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2>Let's Connect</h2>
+            <p class="text-center">If you'd like to get in touch, feel free to reach out using the form below.</p>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Sateesh Jonnalagadda. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
